@@ -134,10 +134,7 @@ const gruffaloCrumble = {
 
 
 const listFoods = (recipe) => {
-  let result = [];
-  result.push(ingredients.map( ingredients => [...ingredients].slice(2, arr.length)));
-  // Solution code here...
-  return result;
+  return recipe.ingredients.map(ing => ing.split(' ').slice(2).join(' '));
 };
 
 //No idea..
