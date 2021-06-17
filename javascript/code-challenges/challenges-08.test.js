@@ -55,6 +55,11 @@ let characters = [
 ];
 
 const sortByChildren = (charArray) => {
+  return charArray.sort(
+    function (a, b) {
+      return (a.children.length - b.children.length)
+    }
+  )
   // Solution code here...
 };
 
@@ -66,7 +71,9 @@ Write a function named containsW that takes in a string. This function should us
 ------------------------------------------------------------------------------------------------ */
 
 const containsW = (str) => {
-  // Solution code here...
+  let regex = /[w]/g
+  return regex.test(str);
+  // Solution code here..
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -82,6 +89,8 @@ For example:
 ------------------------------------------------------------------------------------------------ */
 
 const isNum = (input) => {
+   let regex = /[0-9]/g
+   return regex.test(input)
   // Solution code here...
 };
 
@@ -93,6 +102,8 @@ Write a function named containsWorld that takes in a string or number of any len
 ------------------------------------------------------------------------------------------------ */
 
 const containsWorld = (input) => {
+  let regex = /world/g
+  return regex.test(input)
   // Solution code here...
 };
 
@@ -105,6 +116,8 @@ Return an array containing all the matches.
 ------------------------------------------------------------------------------------------------ */
 
 const isCapitalized = (str) => {
+  let regex = /\b[A-Z]\w+/g
+  return str.match(regex) || []
   // Solution code here...
 };
 
@@ -115,6 +128,7 @@ Write a function named citiesAtoJ that takes in an array of city names and uses 
 ------------------------------------------------------------------------------------------------ */
 
 const citiesAtoJ = (arr) => {
+  return arr.filter( answer => /^[A-J]\w+/g.test(answer));
   // Solution code here...
 };
 
