@@ -66,6 +66,16 @@ HR has asked you to change the data to make it easier to print so that it looks 
 
 const updateNumbers = (obj) => {
   return Object.entries(obj).map(value => value.join(': '));
+  //another solution:
+    // Object.keys(obj).map(name => `${name}: ${obj[name]}`)
+    //or
+    // return Object.entries(obj).map(arr=> `${arr[0]}: ${arr[1]}`);
+    //or
+    // let answer = [];
+    // for (let key in obj) {
+    //   answer.push(`${key}: ${obj[key]}`)
+    // }
+    // return answer;
   // Solution code here...
 };
 
@@ -125,6 +135,8 @@ const getHouses = (arr) => {
   arr.map(value => houses.push(value.house));
   // Solution code here...
   return houses;
+  //other solution
+  // return arr.map(x => x.house);
 };
 
 /*------------------------------------------------------------------------------------------------
@@ -140,14 +152,19 @@ hasChildrenValues(characters, 'Sansa') will return false
 ------------------------------------------------------------------------------------------------ */
 
 const hasChildrenValues = (arr, character) => {
+  // Solution code here...
+  return !!(Object.values(arr).find( x => x.name === character).children);
+  //or
   // for (let i=0; i<arr.length;i++) {
-  //   if (arr[i].name.includes(character)) {
-  //     return (Object.values(arr[i].includes("children")? true:false))
+  //   let current = arr[i];
+  //   if(current.name === character) {
+  //     return Object.values(current).find( x => Array.isArray(x));
   //   }
   // }
-  //No idea
-  // Solution code here...
+  // return false;
 };
+
+  
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7 - Stretch Goal
