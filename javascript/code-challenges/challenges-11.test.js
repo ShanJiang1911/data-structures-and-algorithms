@@ -34,17 +34,18 @@ For example, count(5, [[1, 3, 5, 7, 9], [5, 5, 5], [1, 2, 3]]) returns 4.
 ------------------------------------------------------------------------------------------------ */
 
 const count = (target, input) => {
-  let arr = input.join(',');
-  const countOccurrences = (arr, target) => arr.reduce((acc, elem) => (target === elem ? acc + 1 : acc), 0);
-  console.log(countOccurrences(arr, target));
-  // arr.reduce(function(a, b) {
-  //   let count = 0;
-  //   for(let i = 0; i<arr.length; i++) {
-  //     if (arr[i] == target) {
-  //       return count + 1;
-  //     }
-  //   }
-  // }, '');
+  return input
+  // filter each inner array down to just the target number
+  .map(innerArr => innerArr.filter(x => x === target))
+  // add up how long each of the arrays are
+  .reduce( (ansSoFar, curr) => ansSoFar + curr.length, 0);
+  //or
+  //return input
+  //.map(ns => ns.reduce( (ansSoFar, curr) => curr === target ? ansSoFar + 1 : ansSoFar, 0))
+  // This one is not working --> 
+  // let arr = input.join(',');
+  // const countOccurrences = (arr, target) => arr.reduce((acc, elem) => (target === elem ? acc + 1 : acc), 0);
+  // console.log(countOccurrences(arr, target));   ??? why not working
   // Solution code here...
 };
 
@@ -76,6 +77,10 @@ For example, [ [0,2,5,4], [2,4,10], [] ] should return [ [1, 32], [1024], [] ].
 ------------------------------------------------------------------------------------------------ */
 
 const divisibleByFiveTwoToThePower = (input) => {
+  return input.map(innerArr => innerArr.filter(n => (typeof n) === 'number' && (n % 5 === 0))
+  //[0,5]
+  .map(n => Math.pow(2, n)))
+  //[1,32]
   // Solution code here...
 };
 
@@ -142,7 +147,9 @@ let starWarsData = [{
 }];
 
 let findMaleAndFemale = (data) => {
-  return data.filter(character => character.gender=='male'|| character.gender=='female').map(character => character.name).join(' and ');
+  // return data.filter(character => character.gender=='male'|| character.gender=='female').map(character => character.name).join(' and ');
+  //or
+  return data.filter(c => /^(fe)?male$/.test(c.gender))  .map(c => c.name)  .join(' and ');
   // Solution code here...
 };
 
@@ -153,6 +160,7 @@ Write a function named findShortest that, given the Star Wars data from Challeng
 ------------------------------------------------------------------------------------------------ */
 
 let findShortest = (data) => {
+  return data.reduce( (c1, c2) => Number(c1.height) < Number(c2.height) ? c1 : c2).name;
   // Solution code here...
 };
 
