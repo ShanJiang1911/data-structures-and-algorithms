@@ -82,10 +82,25 @@ const alkiBeach = [33, 31, 147, 130, 27, 93, 38, 126, 141, 63, 46, 17];
 const cookieStores = [firstPike, seaTac, seattleCenter, capHill, alkiBeach];
 
 const grandTotal = (stores) => {
-  return hoursOpen.map(hour => cookieStores.reduce((sum, store) => sum= sum + store[hoursOpen.indexOf(hour)], 0));
-
+  // return hoursOpen.map(hour => cookieStores.reduce((sum, store) => sum= sum + store[hoursOpen.indexOf(hour)], 0));
+  // or:
+  let answer = [];
+  for (let i=0; i< hoursOpen.length; i++) {
+    let total = 0;
+    cookieStores.forEach(store => {
+      total += store[i];
+    });
+    answer.push(total);
+  }
+  return answer;
+  //or:
+  // return stores[0].map( (num, i) => {
+  //   for (let j = 1; j < stores.length; j++) {
+  //     num += stores[j][i];
+  //   }
+  //   return num;
+  // })
   // Solution code here...
-
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -98,10 +113,12 @@ Here is sample data for the 9:00 sales: { sales: '88 cookies', time: '9 a.m.' }.
 Write a function named salesData that uses forEach to iterate over the hourlySales array and create an object for each hour. Return an array of the formatted data.
 ------------------------------------------------------------------------------------------------ */
 
-const salesData = (hours, data) => {
+const salesData = (hours, data) => hours.map((hr, i) => (
+  {time: hr, sales: `${data[i]} cookies`}
+));
   
   // Solution code here...
-};
+;
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6
@@ -125,6 +142,7 @@ const errands = [
 ];
 
 const howManyTreats = (arr) => {
+  return arr[2].items[1].quantity;
   // Solution code here...
 };
 
