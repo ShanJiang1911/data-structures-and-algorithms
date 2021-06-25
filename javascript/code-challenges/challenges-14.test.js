@@ -11,6 +11,9 @@ Write a function named screenForNames that takes in an array of strings and uses
 ------------------------------------------------------------------------------------------------ */
 
 const screenForNames = (arr) => {
+  return arr.filter(string => string.includes('Mr. '));
+
+  // return newArr;
   // Solution code here...
 }
 
@@ -23,6 +26,7 @@ For example, ['apple', 'banana', 'MacGyver'] returns ['Apple', 'Banana', 'MacGyv
 ------------------------------------------------------------------------------------------------ */
 
 const toTitleCase = (arr) => {
+  return arr.map(str => str.replace(str[0], str[0].toUpperCase()));
   // Solution code here...
 };
 
@@ -98,6 +102,11 @@ let starWarsData = [{
 }];
 
 let biggerThanLuke = (arr) => {
+  let answer = [];
+  arr.forEach( value => {if (value.mass > 77) {
+    answer.push(value.name);
+  }})
+  return answer.join(' - ');
   // Solution code here...
 };
 
@@ -116,6 +125,8 @@ This data could be sorted by name or price.
 ------------------------------------------------------------------------------------------------ */
 
 const sortBy = (property, arr) => {
+  arr.sort((a, b) => a.property - b.property);  
+  return arr;
   // Solution code here...
 };
 
@@ -132,6 +143,7 @@ https://secure.com returns true because the URL is secure
 https:/missingslash.org returns false because the URL is malformed
 ------------------------------------------------------------------------------------------------ */
 const isSecure = (url) => {
+  return url.includes('https://');
   // Solution code here...
 };
 
