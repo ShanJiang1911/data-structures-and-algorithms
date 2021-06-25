@@ -50,7 +50,7 @@ For example, (123) 456-7890 returns 1234567890
 ------------------------------------------------------------------------------------------------ */
 
 const standardizePhoneNumbers = (arr) => {
-  let newArr = arr.map(string => string.replace(/?/g, '0')).join('');
+  let newArr = arr.map(string => string.replace(/\D/g, ''));
   return newArr;
   //something wrong at ?
   // Solution code here...
@@ -80,10 +80,9 @@ Write a function named allHappy that takes in an array of strings and returns a 
 ------------------------------------------------------------------------------------------------ */
 
 const allHappy = (arr) => {
-  for (let i=0; i<arr.length; i++) {
-    return /^[:)]$/i.test(arr[i])
-  };
-  //something wrong here
+  return arr.filter(str => str.includes(':)')).length === arr.length;
+  //or
+  // return arr.every(str => str.includes(':)'));
   // Solution code here...
 };
 
