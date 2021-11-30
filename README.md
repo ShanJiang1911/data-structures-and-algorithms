@@ -1,6 +1,13 @@
 # Data Structures and Algorithms
 
+## python401-code-challenge
+See document [README](python401code-challenge/README.md)
+
+---
+
 See [setup instructions](https://codefellows.github.io/setup-guide/code-301/3-code-challenges), in the Code 301 Setup Guide.
+
+
 
 ## Repository Quick Tour and Usage
 
