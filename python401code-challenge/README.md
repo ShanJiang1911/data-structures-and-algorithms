@@ -1,1 +1,1 @@
-![](pic/array-reverse.png)
+![](python401code-challenge/pic/array-reverse.png)
