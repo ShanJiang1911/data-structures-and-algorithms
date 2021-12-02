@@ -6,6 +6,9 @@ See document [README](python401code-challenge/README.md)
 ## python401-code-challenge02
 See document [README](python401code-challenge/code-challenge02/README.md)
 
+## python401-code-challenge03
+See document [README](python401code-challenge/code-challenge03/README.md)
+
 ---
 
 See [setup instructions](https://codefellows.github.io/setup-guide/code-301/3-code-challenges), in the Code 301 Setup Guide.
