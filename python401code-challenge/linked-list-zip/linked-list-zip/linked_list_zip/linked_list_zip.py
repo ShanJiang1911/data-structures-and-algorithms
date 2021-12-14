@@ -4,7 +4,7 @@ class Node:
         self.next = next
 
 
-# Helper function to print a given linked list
+# Helper function to print list_a given linked list
 class LinkedList:
 
   def __init__(self):
@@ -28,27 +28,27 @@ class LinkedList:
 
 
 
-def zip_linked_lists(a, b):
+def zip_linked_lists(list_a, list_b):
 
     current = Node()
     tail = current
 
     while True:
-        if a is None:
-            tail.next = b
+        if list_a is None:
+            tail.next = list_b
             break
 
-        elif b is None:
-            tail.next = a
+        elif list_b is None:
+            tail.next = list_a
             break
 
-        else:
-            tail.next = a
-            tail = a
-            a = a.next
+    #     else:
+    #         tail.next = list_a
+    #         tail = list_a
+    #         list_a = list_a.next
 
-            tail.next = b
-            tail = b
-            b = b.next
+    #         tail.next = list_b
+    #         tail = list_b
+    #         list_b = list_b.next
 
-    return current.next
+    # return current.next
