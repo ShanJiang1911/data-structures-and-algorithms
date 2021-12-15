@@ -1,15 +1,42 @@
 # Data Structures and Algorithms
 
-### All code401 Python code challenge are under the "python" folder
+### All code401 Python code challenges are under the "python" folder
 
-### python401-code-challenge
-See document [README](python401code-challenge/README.md)
+###
 
-### python401-code-challenge02
+### code-challenge12
+See document [README](python/cc12-stack-queue-animal-shelter/stack-queue-animal-shelter/README.md)
+
+### code-challenge11
+See document [README](python/code-challenge11-stack-queue-pseudo/stack-queue-pseudo/README.md)
+
+### code-challenge10
+See document [README](python/code-challenge10-stack-and-queue/stack-and-queue/README.md)
+
+### code-challenge08
+See document [README](python/code-challenge08-linked-list-zip/code-challenge08-linked-list-zip/README.md)
+
+### code-challenge07
+See document [README](python/code-challenge07-linked-list-kth/code-challenge07-linked-list-kth/README.md)
+
+### code-challenge06
+See document [README](python/code-challenge06-linked-list-insertions/linked-list-insertions/README.md)
+
+### code-challenge05
+See document [README](python/code-challeng05-linked-list/linked-list/README.md)
+
+### code-challenge03
+See document [README](python401code-challenge/code-challenge03/README.md)
+
+### code-challenge02
 See document [README](python401code-challenge/code-challenge02/README.md)
 
-### python401-code-challenge03
-See document [README](python401code-challenge/code-challenge03/README.md)
+### code-challenge01
+See document [README](python/code-challeng01-array-reverse/README.md)
+
+
+
+
 
 ---
 
