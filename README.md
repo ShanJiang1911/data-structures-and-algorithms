@@ -1,12 +1,14 @@
 # Data Structures and Algorithms
 
-## python401-code-challenge
+### All code401 Python code challenge are under the "python401code-challenge" folder
+
+### python401-code-challenge
 See document [README](python401code-challenge/README.md)
 
-## python401-code-challenge02
+### python401-code-challenge02
 See document [README](python401code-challenge/code-challenge02/README.md)
 
-## python401-code-challenge03
+### python401-code-challenge03
 See document [README](python401code-challenge/code-challenge03/README.md)
 
 ---
