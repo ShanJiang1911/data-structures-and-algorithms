@@ -2,7 +2,8 @@
 
 ### All code401 Python code challenges are under the "python" folder
 
-###
+### code-challenge13
+See document [README](python/cc13-stack-queue-brackets/stack-queue-brackets/README.md)
 
 ### code-challenge12
 See document [README](python/cc12-stack-queue-animal-shelter/stack-queue-animal-shelter/README.md)
