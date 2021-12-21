@@ -25,6 +25,7 @@ class BinaryTree:
 
     values = []
 
+
     def step(root):
       if root is None:
         return
@@ -36,6 +37,7 @@ class BinaryTree:
     step(self.root)
 
     return values
+
 
   def post_order(self):
   #left -> right -> root
@@ -51,3 +53,19 @@ class BinaryTree:
       return values
 
     return step(self.root, [])
+
+
+  def find_max(root):
+    if (root == None):
+        return str("Empty")
+
+    rt = root.value
+    left_rt = root.left
+    right_rt = root.right
+    if (left_rt > rt):
+        rt = left_rt
+    if (right_rt > rt):
+        rt = right_rt
+    return rt
+
+  find_max()

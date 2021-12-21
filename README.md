@@ -2,6 +2,9 @@
 
 ### All code401 Python code challenges are under the "python" folder
 
+### code-challenge16
+See document [README](python/code_challenges/trees_find_max/README.md)
+
 ### code-challenge15
 See document [README](python/code_challenges/trees/README.md)
 
