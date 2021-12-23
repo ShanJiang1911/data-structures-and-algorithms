@@ -2,6 +2,9 @@
 
 ### All code401 Python code challenges are under the "python" folder
 
+### code-challenge18
+See document [README](python/code_challenges/tree_fizz_buzz/README.md)
+
 ### code-challenge17
 See document [README](python/code_challenges/tree_breadth_first/README.md)
 
