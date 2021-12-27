@@ -2,7 +2,23 @@
 
 ### All code401 Python code challenges are under the "python" folder
 
+<<<<<<< HEAD
 #### code-challenge13
+=======
+### code-challenge18
+See document [README](python/code_challenges/tree_fizz_buzz/README.md)
+
+### code-challenge17
+See document [README](python/code_challenges/tree_breadth_first/README.md)
+
+### code-challenge16
+See document [README](python/code_challenges/trees_find_max/README.md)
+
+### code-challenge15
+See document [README](python/code_challenges/trees/README.md)
+
+### code-challenge13
+>>>>>>> b1be8ca99b92aec244412aafe6d34071cb3efad2
 See document [README](python/cc13-stack-queue-brackets/stack-queue-brackets/README.md)
 
 #### code-challenge12
