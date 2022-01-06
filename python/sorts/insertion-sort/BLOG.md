@@ -1,7 +1,7 @@
 ## Insertion Sort
 This blog will will show a sorting algorithm about how to traverse an array, then return an new array with array elements in sorting sequence. New array will be incrementally sorted.
 
-### Pseudocode
+### Code
 ```
   def insertion_sort(arr):
   for i in range(1, len(arr)):
@@ -38,6 +38,9 @@ New round iteration in the for loop start. This time i=2, so j=i-1=1, temp=array
 The following round will be i=4, where temp=16. We will repeat the process in step2. The loop will keep iteration until nothing on the left side is larger than temp, then it will return line4 in the pic.
 
 #### Step 5
-#### Step 6
-#### Step 7
-#### Step 8
+![](./pic/step5.jpg)
+Finally we get to the last round, where i=5. Just repeat what we did in step 4. The final results will be like line 2 in the picture. Iteration complete, new array sorted in assending order.
+
+### BigO
+* Time: O(n^2). Every elements will iterate n-1 times, n(n-1)=n^2-n, so n squared time is expected.
+* Space: O(1). No new elements will be created so the space is constant.
