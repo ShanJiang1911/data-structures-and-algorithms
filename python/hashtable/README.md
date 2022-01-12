@@ -1,11 +1,12 @@
 # Hashtables
-<!-- Short summary or background information -->
+Implement hashtable.
 
 ## Challenge
-<!-- Description of the challenge -->
+Impletment hashtable class with add, get, contains, and hash methods
 
 ## Approach & Efficiency
-<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+Hash tables time complexity is O (1) in the best-case scenario. The worst-case time complexity is O(n) when mana values generate the same key
+Space complexity for hashtable is O(n)
 
 ## API
 <!-- Description of each method publicly available in each of your hashtable -->
