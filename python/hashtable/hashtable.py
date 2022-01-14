@@ -1,4 +1,4 @@
-class hashtable:
+class Hashtable:
 
     def __init__(self, size=1024):
         self.buckets = [None] * size

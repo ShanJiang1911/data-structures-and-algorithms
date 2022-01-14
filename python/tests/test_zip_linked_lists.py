@@ -1,11 +1,20 @@
-from code_challenges.zip_linked_lists import zip_linked_lists
-from linked_list.linked_list import LinkedList
+from linked_list_zip.linked_list_zip import zip_linked_lists
+from linked_list_zip.linked_list_zip import LinkedList
 
-# def test_zip_linked_lists():
-#   list_a = LinkedList() # add 1,2 and 3
-#   list_b = LinkedList() # add a,b and c
+def test_zip_linked_lists():
+  list_a = LinkedList()
+  list_a.append("a")
+  list_a.append("b")
+  list_a.append("c")
 
-#   actual = zip_linked_lists(list_a, list_b)
-#   expected = "whatever should be returned from function"
+  list_b = LinkedList()
+  list_b.append("1")
+  list_b.append("2")
+  list_b.append("3")
 
-#   assert actual == expected
+  zipped = zip_linked_lists(list_a, list_b)
+
+  actual = str(zipped)
+  expected = "[a] -> [1] -> [b] -> [2] -> [c] -> [3]"
+
+  assert actual == expected

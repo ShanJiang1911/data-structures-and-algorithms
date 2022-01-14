@@ -1,4 +1,4 @@
-from insertion_sort import __version__
+from insertion_sort.insertion_sort import __version__
 
 
 def test_version():
