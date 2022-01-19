@@ -37,5 +37,6 @@ def Merge(left, right, arr):
       i = i+1
       k = k+1
 
-arr = [12, 11, 13, 5, 6, 7]
+arr = [12, 11, 13, 5, -6, -9]
 Mergesort(arr)
+print(arr)
