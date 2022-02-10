@@ -1,6 +1,6 @@
 from stack_and_queue.stack import Stack
 import pytest
-from stack_and_queue.stack import UnderflowError
+from code_challenges.stack_and_queue.stack_and_queue.underflow_error import UnderflowError
 
 
 def test_is_empty_when_empty():
