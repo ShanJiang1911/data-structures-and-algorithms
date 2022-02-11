@@ -22,14 +22,11 @@ class BinaryTree:
 
   def in_order(self):
   # left -> root -> right
-
     values = []
-
 
     def step(root):
       if root is None:
         return
-
       step(root.left)
       values.append(root.value)
       step(root.right)
@@ -55,17 +52,17 @@ class BinaryTree:
     return step(self.root, [])
 
 
-  def find_max(root):
-    if (root == None):
-        return str("Empty")
+  # def find_max(self, root):
+  #   if (root == None):
+  #       return str("Empty")
 
-    rt = root.value
-    left_rt = root.left
-    right_rt = root.right
-    if (left_rt > rt):
-        rt = left_rt
-    if (right_rt > rt):
-        rt = right_rt
-    return rt
+  #   rt = root.value
+  #   left_rt = root.left
+  #   right_rt = root.right
+  #   if (left_rt > rt):
+  #       rt = left_rt
+  #   if (right_rt > rt):
+  #       rt = right_rt
+  #   return rt
 
-  find_max()
+  # find_max()
