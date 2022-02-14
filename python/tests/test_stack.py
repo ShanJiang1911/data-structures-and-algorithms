@@ -1,7 +1,9 @@
 from stack_and_queue.stack import Stack
+from stack_and_queue.underflow_error import UnderflowError
 import pytest
-from code_challenges.stack_and_queue.stack_and_queue.underflow_error import UnderflowError
 
+def test_exists():
+  assert Stack
 
 def test_is_empty_when_empty():
   stack = Stack()
@@ -9,6 +11,20 @@ def test_is_empty_when_empty():
   expected = True
   assert actual == expected
 
+def test_peek_empty():
+  stack = Stack()
+  with pytest.raises(UnderflowError):
+    stack.peek()
+
+
+
+def test_peek():
+    s = Stack()
+    s.push("apple")
+    s.push("banana")
+    actual = s.peek()
+    expected = "banana"
+    assert actual == expected
 
 def test_psuh_empty():
   stack = Stack()
@@ -18,10 +34,6 @@ def test_psuh_empty():
   assert actual == expected
 
 
-def test_peek_empty():
-  stack = Stack()
-  with pytest.raises(UnderflowError):
-    stack.peek()
 
 
 def test_push_onto_full():
@@ -44,16 +56,12 @@ def test_pop_single():
 
 def test_pop_some():
     s = Stack()
-
     s.push("apple")
     s.push("banana")
     s.push("cucumber")
-
     s.pop()
-
     actual = s.pop()
     expected = "banana"
-
     assert actual == expected
 
 
@@ -78,13 +86,6 @@ def test_pop_until_empty():
     assert actual == expected
 
 
-def test_peek():
-    s = Stack()
-    s.push("apple")
-    s.push("banana")
-    actual = s.peek()
-    expected = "banana"
-    assert actual == expected
 
 
 def test_pop_empty():
