@@ -1,5 +1,5 @@
 from stack_and_queue.queue import Queue
-from code_challenges.stack_and_queue.stack_and_queue.underflow_error import UnderflowError
+from stack_and_queue.underflow_error import UnderflowError
 import pytest
 
 
