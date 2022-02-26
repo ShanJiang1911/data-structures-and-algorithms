@@ -10,8 +10,4 @@ def insertion_sort(arr):
     arr[j+1] = temp
 
 
-# def test_insertion_sort():
-#   nums = [8, 4, 23, 42, 16, 15]
-#   insertion_sort(nums)
-#   expected = [4, 8, 15, 16, 23, 42]
-#   assert nums == expected
+
