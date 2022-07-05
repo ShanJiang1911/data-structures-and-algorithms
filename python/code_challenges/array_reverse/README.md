@@ -3,7 +3,7 @@ This is a simple whiteboard for array reverse.
 
 ## Whiteboard Process
 
-![](python/pic/array-reverse.png)
+![](/python/pic/array-reverse.png)
 
 ## Approach & Efficiency
 <!-- What approach did you take? Discuss Why. What is the Big O space/time for this approach? -->

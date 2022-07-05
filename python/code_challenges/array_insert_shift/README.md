@@ -3,7 +3,7 @@ Givin an array and a value, generate a new array which has the given value added
 
 ## Whiteboard Process
 
-![](../pic/insertShiftArray.png)
+![](/python/pic/insertShiftArray.png)
 
 ## Approach & Efficiency
 Use python to insert the value to the middle of the array
