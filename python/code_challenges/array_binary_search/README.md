@@ -3,6 +3,6 @@ Given a sorted array and a search key. If any element inside the array equals th
 
 ## Whiteboard Process
 
-![](../pic/Array-binary-search.png)
+![](/python/pic/Array-binary-search.png)
 
 ## Approach & Efficiency
