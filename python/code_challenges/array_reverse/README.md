@@ -1,3 +1,14 @@
+# Reverse an Array
+This is a simple whiteboard for array reverse.
+
+## Whiteboard Process
+
+![](python/pic/array-reverse.png)
+
+## Approach & Efficiency
+<!-- What approach did you take? Discuss Why. What is the Big O space/time for this approach? -->
+
+
 # Data Structures and Algorithms
 
 ## Language: `Python`
